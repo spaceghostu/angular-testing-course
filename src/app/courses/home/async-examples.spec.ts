@@ -55,7 +55,7 @@ describe('Async Testing Examples', () => {
     expect(counter).toBe(11);
   }));
 
-  fit('Asynchronous test example - Observables', fakeAsync(() => {
+  it('Asynchronous test example - Observables', fakeAsync(() => {
     let test = false;
     const test$ = of(test).pipe(delay(1000));
     test$.subscribe(() => {
